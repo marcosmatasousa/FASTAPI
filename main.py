@@ -36,9 +36,6 @@ def get_latest_post():
                             detail="There are no posts")
     return {"data": post}
     
-    
-    
-
 @app.get("/posts")
 def get_posts():
     cursor.execute("""SELECT * FROM posts""")
